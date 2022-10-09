@@ -1,5 +1,12 @@
 $sectionSpace: 5rem;
 
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
 .callToAction {
     margin-bottom: 5rem;
     p {
@@ -39,5 +46,18 @@ $sectionSpace: 5rem;
 
 .devices {
     margin-top: 5rem;
+}
+
+.flex-container {
+    @include flexCenter();
+    justify-content: space-between;
+    margin-bottom: $sectionSpace;
+    .flex-item {
+        width: calc(100%/3);
+        padding: 1rem;
+        .icon {
+            margin: 2rem 0;
+        }
+    }
 }
 

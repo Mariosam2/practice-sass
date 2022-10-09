@@ -6,6 +6,7 @@
 .btn {
   font-weight: 600;
   padding: 0.8rem 2rem;
+  margin: 0 0.5rem;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -56,6 +57,21 @@
   margin-top: 5rem;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.flex-container .flex-item {
+  width: 33.3333333333%;
+  padding: 1rem;
+}
+.flex-container .flex-item .icon {
+  margin: 2rem 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,6 +81,10 @@
 
 html {
   font-size: 18px;
+}
+
+body {
+  color: hsl(201deg, 11%, 66%);
 }
 
 img {
@@ -90,7 +110,7 @@ img {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
 }
 
 h2 {
@@ -103,6 +123,7 @@ h4 {
 
 .title {
   margin-bottom: 1rem;
+  color: hsl(210deg, 10%, 33%);
 }
 
 header {
@@ -141,4 +162,41 @@ header #logo {
   width: 100%;
 }
 
-/* #endregion *//*# sourceMappingURL=style.css.map */
+.col-12 {
+  width: 100%;
+}
+
+/* #endregion */
+footer {
+  display: flex;
+  padding: 2rem 0;
+  background-color: whitesmoke;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-left {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+footer .container .footer-left img {
+  max-width: 10%;
+}
+footer .container .footer-left .info {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .footer-left .info span {
+  display: inline-block;
+  width: 33%;
+  padding: 0.2rem 1rem;
+}
+footer .container .footer-right {
+  display: flex;
+  align-items: center;
+}
+footer .container .footer-right img {
+  padding: 0 0.5rem;
+}/*# sourceMappingURL=style.css.map */
