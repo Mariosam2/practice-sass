@@ -1,0 +1,43 @@
+$sectionSpace: 5rem;
+
+.callToAction {
+    margin-bottom: 5rem;
+    p {
+    width: 95%;
+    margin: 0 auto;
+    }
+}
+
+.quickSearch {
+    display: flex;
+    .flex-item {
+        flex-basis: 40%;
+    }
+    .large {
+        flex-basis: 60%;
+        img {
+        margin-left: -30px ;
+        }
+    }
+    .snippets {
+        .snippet {
+            margin-top: 3rem;
+        }
+        p {
+        text-align: justify; 
+        max-width: 70%;  
+        }
+        
+       
+
+    }
+}
+
+.quickSearch.container.xl {
+    margin-bottom: $sectionSpace;
+}
+
+.devices {
+    margin-top: 5rem;
+}
+

@@ -1,0 +1,27 @@
+$primaryCyan: hsl(171, 66%, 44%);
+$primaryLightblue: hsl(233, 100%, 69%);
+$py: 0.8rem;
+
+.buttons {
+    padding: $py 0;
+    margin: 2rem 0;
+}
+
+.btn {
+    font-weight: 600;
+    padding: $py 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+}
+
+
+
+.primary_cyan {
+    background-color: $primaryCyan;
+}
+
+.primary_lightblue {
+    background-color: $primaryLightblue;
+}
