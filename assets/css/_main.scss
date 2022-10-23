@@ -69,3 +69,48 @@ $sectionSpace: 5rem;
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and(max-width: 991px) {
+    .quickSearch{
+        flex-direction: column;
+        justify-content: center; 
+               
+    }
+
+    .quickSearch.container.xl {
+        margin-bottom: 10rem;
+    }
+
+    .quickSearch .flex-item{
+        flex-basis: 100%;
+        text-align: center;        
+    }
+
+    .quickSearch .large img {
+        margin: 0;
+    }
+     
+    .quickSearch .snippet p {
+        text-align: center;
+        max-width: none;
+    }
+}
+
+
+@media screen and(max-width: 575px) {
+   
+
+    .flex-container .flex-item {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    
+}

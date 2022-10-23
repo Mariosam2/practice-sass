@@ -25,3 +25,17 @@ $py: 0.8rem;
 .primary_lightblue {
     background-color: $primaryLightblue;
 }
+
+@media screen and (max-width: 1200px) {
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .buttons > * {
+        width: 100%;
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+    }
+}

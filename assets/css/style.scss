@@ -3,6 +3,7 @@
 $darkGrayishblue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 $sectionSpace: 5rem;
+$breakpoint-mobile: 575px;
 
 @mixin resetRule() {
     box-sizing: border-box;
@@ -145,6 +146,7 @@ footer {
             justify-content: space-between;
 
             img {
+                object-fit: contain;
                 max-width: 10%;
             }
 
@@ -173,4 +175,67 @@ footer {
 
     }
 
+}
+
+@media screen and(max-width: 1199px) {
+    .companies img {
+        margin: 1rem 0.5rem;
+    }
+}
+
+@media screen and(max-width: 991px) {
+    .container {
+        width: 100%;
+        max-width: 960px;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and(max-width: 575px) {
+    .container {
+        width: 100%;
+        max-width: 540px;
+        padding: 0 2rem;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .companies {
+        flex-direction: column;
+    }
+
+    .companies img {
+        margin: 2rem 0;
+    }
+
+    footer .container,
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .footer-left img {
+        max-width: 20%;
+        margin: 1rem 0;
+    }
+
+    .footer-left .info {
+        text-align: center;
+    }
+
+    footer .container .footer-left .info a  {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    footer .container .footer-right {
+        width: 60%;
+        justify-content: center;
+    }
+
+    footer .container .footer-right img {
+        padding: 0;
+        margin: 1rem 1.5rem;
+    }
 }
