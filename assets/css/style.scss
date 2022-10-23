@@ -3,6 +3,8 @@
 $darkGrayishblue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 $sectionSpace: 5rem;
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
 $breakpoint-mobile: 575px;
 
 @mixin resetRule() {
@@ -177,13 +179,13 @@ footer {
 
 }
 
-@media screen and(max-width: 1199px) {
+@media screen and(max-width: $breakpoint-desktop) {
     .companies img {
         margin: 1rem 0.5rem;
     }
 }
 
-@media screen and(max-width: 991px) {
+@media screen and(max-width: $breakpoint-tablet) {
     .container {
         width: 100%;
         max-width: 960px;
@@ -191,7 +193,7 @@ footer {
     }
 }
 
-@media screen and(max-width: 575px) {
+@media screen and(max-width: $breakpoint-mobile) {
     .container {
         width: 100%;
         max-width: 540px;

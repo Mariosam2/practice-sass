@@ -1,4 +1,7 @@
 $sectionSpace: 5rem;
+$breakpoint-desktop: 1199px;
+$breakpoint-tablet: 991px;
+$breakpoint-mobile: 575px;
 
 @mixin flexCenter() {
     display: flex;
@@ -70,14 +73,14 @@ $sectionSpace: 5rem;
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: $breakpoint-desktop) {
     .flex-container {
         flex-wrap: wrap;
     }
     
 }
 
-@media screen and(max-width: 991px) {
+@media screen and(max-width: $breakpoint-tablet) {
     .quickSearch{
         flex-direction: column;
         justify-content: center; 
@@ -104,7 +107,7 @@ $sectionSpace: 5rem;
 }
 
 
-@media screen and(max-width: 575px) {
+@media screen and(max-width: $breakpoint-mobile) {
    
 
     .flex-container .flex-item {

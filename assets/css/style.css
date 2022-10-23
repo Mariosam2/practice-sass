@@ -20,7 +20,7 @@
   background-color: hsl(233deg, 100%, 69%);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .buttons {
     display: flex;
     flex-wrap: wrap;

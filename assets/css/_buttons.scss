@@ -1,6 +1,7 @@
 $primaryCyan: hsl(171, 66%, 44%);
 $primaryLightblue: hsl(233, 100%, 69%);
 $py: 0.8rem;
+$breakpoint-desktop: 1199px;
 
 .buttons {
     padding: $py 0;
@@ -26,7 +27,7 @@ $py: 0.8rem;
     background-color: $primaryLightblue;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $breakpoint-desktop) {
     .buttons {
         display: flex;
         flex-wrap: wrap;
